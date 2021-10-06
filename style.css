@@ -40,7 +40,7 @@ body{
     padding: 20px 0px;
     position: absolute;
     right: 0;
-    width: 350px;
+    width: auto;
 }
 
 #cart .total p{
@@ -49,12 +49,14 @@ body{
 }
 #cart .total h4{
     margin: 0;
+    font-size: 20px;
 }
 #cart .total{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-style: italic;
+    
+    
 }
 #cart .btns-clear-checkout{
     margin-top: 15px;
@@ -91,6 +93,50 @@ body{
     text-transform: uppercase;
     
 }
+
+/* Cart - items cart */
+.items{
+    padding: 0 20px;
+}
+
+.items .item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items .img-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.items .item .trash-can path{
+    background-color: white;
+}
+.no-margin{
+    margin: 0px;
+}
+
+.description-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 10px;
+
+}
+.description-item .title{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 200;
+}
+.description-item .value{
+    font-size: 16.5px;
+    font-weight: 200;
+}
+
 
 /* Header - Main/menu */
 nav{

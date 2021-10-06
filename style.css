@@ -40,7 +40,7 @@ body{
     padding: 20px 0px;
     position: absolute;
     right: 0;
-    width: auto;
+    width: 370px;
 }
 
 #cart .total p{
@@ -76,6 +76,7 @@ body{
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
     
     
 }
@@ -91,6 +92,7 @@ body{
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
     
 }
 
@@ -103,6 +105,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 20px;
 }
 .items .img-item{
     width: 50px;
@@ -110,9 +113,6 @@ body{
     border-radius: 50%;
 }
 
-.items .item .trash-can path{
-    background-color: white;
-}
 .no-margin{
     margin: 0px;
 }
@@ -319,6 +319,12 @@ main .favorite-products .breakfasts .breakfast img{
 
 main .favorite-products .breakfasts .breakfast a{
     color:#905960;
+}
+
+main .favorite-products .breakfasts .breakfast span{
+    color:#905960;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 

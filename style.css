@@ -9,6 +9,8 @@
 
 :root{
 	--maincolor:#905960;
+    --secondcolor:#F7D0D5;
+    --thirdcolor:#C4959B;
 }
 
 /* Header - Logo  */
@@ -29,6 +31,65 @@ body{
     align-items: center;
     justify-content: space-around;
 
+}
+
+/* Shop Cart */
+#cart {
+    background-color: var(--maincolor);
+    color: white;
+    padding: 20px 0px;
+    position: absolute;
+    right: 0;
+    width: 350px;
+}
+
+#cart .total p{
+    margin: 0;
+    font-size: 1.3rem;
+}
+#cart .total h4{
+    margin: 0;
+}
+#cart .total{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: italic;
+}
+#cart .btns-clear-checkout{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#cart .btns-clear-checkout .btn-clear{
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'Akronim', cursive;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+
+#cart .btns-clear-checkout .btn-checkout{
+    padding: 5px;
+    background-color: white;
+    color: var(--thirdcolor);
+    border: 2px solid var(--secondcolor);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'Akronim', cursive;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
 }
 
 /* Header - Main/menu */

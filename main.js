@@ -41,7 +41,6 @@ function addItem(child) {
         removeItemCart(item.path[1]);
     });
 
-
 }
 
 
@@ -76,5 +75,21 @@ function extractNum(string){
     numString = string.match(/(\d+.\d+)/)[0].replace(".","");
     return parseInt(numString);
 
+}
+
+//button clear cart
+const buttonClear = document.querySelector("#cart .btns-clear-checkout .btn-clear");
+buttonClear.addEventListener('click', clearCart); 
+
+//function clear cart
+function clearCart(){
+    let items = document.getElementById("items");
+    totalValue=0;
+    total.innerText = `$${nf.format(totalValue)} COP`;
+    while(items.firstChild!=null){
+            items.removeChild(items.firstChild);
+               
+    }
+    
 }
 

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 /* Utilities */
 .pink-base{
     background-color: #F7D0D5;
@@ -22,15 +27,20 @@ body{
 .logo{
     background: url(images/background1.PNG) repeat top right;
     display: flex;
-    padding:  3px 10vw;
+    padding:  3px 5vw 3px 10vw;
+    
 }
 .logo img{
     height: 150px;
-    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin: auto;
+}
 
+.logo #button-cart{
+    position: absolute;
+    cursor: pointer;
+    right: 3vw;
 }
 
 /* Shop Cart */
@@ -42,6 +52,7 @@ body{
     right: 0;
     width: auto;
     min-width: 350px;
+    display: none;
 }
 
 #cart .total p{
@@ -143,7 +154,7 @@ body{
 nav{
     border-top: 2px solid #E8C8C9;
     display: block;
-    padding: 20px 10vw;
+    padding: 20px 5vw 20px 10vw;
     color: white;
     font-size: 20px;
 }
@@ -151,7 +162,7 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 nav ul li a{
     text-decoration: none;
@@ -165,7 +176,7 @@ nav ul li a:hover{
 /* Header - Head */
 .head{
     display: block;
-    padding: 20px 10vw;
+    padding: 20px 5vw 20px 10vw;
     color: white;
     font-size: 16px;
     border-bottom: 2px solid #E8C8C9;

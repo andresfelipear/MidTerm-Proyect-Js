@@ -23,8 +23,7 @@ function addItem(child) {
     var srcImage = child.children[0].src;
     var title = child.children[1].innerText;
     var value = child.children[2].innerText;
-    var stringValue = value.match(/(\d+.\d+)/)[0].replace(".","");
-    var numValue = parseInt(stringValue);
+    var numValue = extractNum(value);
     var element = document.getElementById('items');
     var item = document.createElement("div");
     item.setAttribute('class', 'item');
@@ -37,6 +36,10 @@ function addItem(child) {
     element.appendChild(item);
     totalValue+=numValue;
     total.innerText = `$${nf.format(totalValue)} COP`;
+    var trashCan = item.children[2];
+    trashCan.addEventListener('click', function(item){
+        removeItemCart(item.path[1]);
+    });
 
 
 }
@@ -57,3 +60,21 @@ cart.addEventListener("click",()=>{
     }
     
 })
+
+//removing items from the cart
+function removeItemCart(item){
+    var value = item.children[1].children[1].innerText;
+    var numValue = extractNum(value);
+    totalValue-=numValue;
+    total.innerText = `$${nf.format(totalValue)} COP`;
+    item.remove();
+
+}
+
+//function extract number of text and covert to int
+function extractNum(string){
+    numString = string.match(/(\d+.\d+)/)[0].replace(".","");
+    return parseInt(numString);
+
+}
+

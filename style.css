@@ -149,6 +149,10 @@ body{
     font-weight: 200;
 }
 
+.item .trash-can{
+    cursor: pointer;
+}
+
 
 /* Header - Main/menu */
 nav{

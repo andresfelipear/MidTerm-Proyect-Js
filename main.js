@@ -3,6 +3,8 @@
 var listItems = document.querySelectorAll(".breakfast");
 var listLinks = document.querySelectorAll(".breakfast span");
 var item_amounts = document.getElementById("item_amount");
+
+//Adding counter items-cart
 item_cnt = 0;
 item_amounts.innerHTML = item_cnt;
 
